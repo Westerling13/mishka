@@ -10,10 +10,12 @@
     <div class="page__wrapper">
 
       <header class="header">
-        <a class="header__logo">
-          <img class="header__logo-image" src="img/logo-mishka.svg" width="86" height="35" alt="Логотип Mishka">
-        </a>
-        <button class="header__button">Меню</button>
+        <div class="header__wrapper">
+          <a class="header__logo">
+            <img class="header__logo-image" src="img/logo-mishka-mobile.png" width="86" height="35" alt="Логотип Mishka">
+          </a>
+          <button class="header__button">Меню</button>
+        </div>
         <nav class="main-nav">
           <ul class="site-list">
             <li class="site-list__item">
@@ -40,10 +42,10 @@
       <main class="main">
 
         <section class="intro">
-          <h1 class="intro__title">Милые штуки ручной работы для дома</h1>
-          <div class="intro__categorys">
-            <a class="intro__category-link intro__category-link--interior" href="#">Предметы <br>интерьера</a>
-            <a class="intro__category-link intro__category-link--toys" href="#">Детские <br>игрушки</a>
+          <h1 class="intro__title">Милые штуки ручной<br> работы для дома</h1>
+          <div class="intro__wrapper">
+            <a class="intro__link intro__link--interior" href="#">Предметы <br>интерьера</a>
+            <a class="intro__link intro__link--toys" href="#">Детские <br>игрушки</a>
           </div>
         </section>
 
@@ -54,21 +56,21 @@
             Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
           </p>
           <table class="stock__parameters">
-            <tr>
+            <tr class="stock__parameter">
               <td class="stock__field">Цвет:</td>
               <td class="stock__value">"Тиффани"/серый</td>
             </tr>
-            <tr>
+            <tr class="stock__parameter">
               <td class="stock__field">Диаметр:</td>
               <td class="stock__value">25 см</td>
             </tr>
-            <tr>
+            <tr class="stock__parameter">
               <td class="stock__field">Высота:</td>
               <td class="stock__value">15 см</td>
             </tr>
           </table>
           <p class="stock__image">
-            <img src="img/stock-baskets.jpg" width="260" height="315" alt="Вязаные корзинки">
+            <img src="img/stock-baskets-mobile.jpg" width="260" height="315" alt="Вязаные корзинки">
           </p>
           <p class="stock__price">
             Цена: 990 руб.
@@ -79,12 +81,12 @@
         <section class="about">
           <h2 class="about__title">Коротко о нас:</h2>
           <ul class="about__list">
-            <li class="about__item about__item--flower">Экологически чистые материалы</li>
-            <li class="about__item about__item--bill">Скандинавский стиль по российской цене</li>
-            <li class="about__item about__item--heart">Увеличивает лайки на фотографиях</li>
-            <li class="about__item about__item--ball">Связано вручную с любовью и умилением</li>
+            <li class="about__item about__item--flower">Экологически<br> чистые материалы</li>
+            <li class="about__item about__item--bill">Скандинавский стиль<br> по российской цене</li>
+            <li class="about__item about__item--heart">Увеличивает лайки<br> на фотографиях</li>
+            <li class="about__item about__item--ball">Связано вручную с<br> любовью и умилением</li>
             <li class="about__item about__item--rocket">Поддержка отечественного производителя</li>
-            <li class="about__item about__item--gift">Поставляется в подарочной упаковке</li>
+            <li class="about__item about__item--gift">Поставляется в<br> подарочной упаковке</li>
           </ul>
         </section>
 
@@ -107,8 +109,8 @@
               <span class="reviews__nickname">@misssssiskras</span>
             </blockquote>
           </div>
-          <button class="reviews__button-left">Влево</button>
-          <button class="reviews__button-right">Вправо</button>
+          <button class="reviews__slider-button reviews__slider-button--left">Влево</button>
+          <button class="reviews__slider-button reviews__slider-button--right">Вправо</button>
           <a class="reviews__button button" href="#">Написать</a>
         </section>
 
@@ -123,8 +125,9 @@
               <tr>
                 <td class="contacts__field">адрес:</td>
                 <td class="contacts__adress">
-                  г. Санкт-Петербург,
-                  ул. Большая Конюшенная,
+                  г. Санкт-Петербург,<br>
+                  ул. Большая <br>
+                  Конюшенная, <br>
                   д. 19/8, офис 101
                 </td>
               </tr>
@@ -135,6 +138,17 @@
           </div>
           <a class="contacts__button button" href="#">Напишите нам</a>
         </section>
+
+        <section class="modal">
+          <h2 class="modal__title">Добавить<br> в корзину</h2>
+          <p class="modal__text">Выберите размер:</p>
+          <div class="modal__wrapper">
+            <button class="modal__size-button modal__size-button--active">S</button>
+            <button class="modal__size-button">M</button>
+            <button class="modal__size-button">L</button>
+          </div>
+          <a class="modal__button" href="#">Добавить</a>
+        </section>
       </main>
 
       <footer class="footer">
@@ -143,13 +157,13 @@
         </a>
         <ul class="footer__social-list">
           <li class="footer__social-item">
-            <a class="footer__social-link" href="#">Мы в Инстаграме</a>
+            <a class="footer__social-link footer__social-link--instagram" href="#">Мы в Инстаграме</a>
           </li>
           <li class="footer__social-item">
-            <a class="footer__social-link" href="#">Мы в Фейсбуке</a>
+            <a class="footer__social-link footer__social-link--fb" href="#">Мы в Фейсбуке</a>
           </li>
           <li class="footer__social-item">
-            <a class="footer__social-link" href="#">Мы в Твиттере</a>
+            <a class="footer__social-link footer__social-link--twitter" href="#">Мы в Твиттере</a>
           </li>
         </ul>
         <div class="footer__copyright">

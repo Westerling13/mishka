@@ -1,3 +1,59 @@
 .header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
   background-color: #ffffff;
+}
+
+.header__wrapper {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  width: 100%;
+  padding: 22px 0 22px;
+}
+
+.header__logo {
+  display: block;
+  width: 86px;
+  height: 35px;
+}
+
+.header__button {
+  position: absolute;
+  top: 32px;
+  right: 31px;
+
+  width: 20px;
+  height: 14px;
+
+  font-size: 0;
+  line-height: 0;
+
+  border: none;
+  background-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 11%,
+    #fff 11%,
+    #fff 44.5%,
+    #000 44.5%,
+    #000 55.5%,
+    #fff 55.5%,
+    #fff 89%,
+    #000 89%,
+    #000 100%,
+    );
+}
+
+.header__news-list {
+  display: none;
+}
+
+.header__delivery {
+  display: none;
 }
