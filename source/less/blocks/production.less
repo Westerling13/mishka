@@ -1,0 +1,73 @@
+.production {
+  padding: 28 0 33px;
+}
+
+.production__title {
+  position: relative;
+
+  margin: 0;
+  padding: 25px 15px 20px 95px;
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+
+  border: 1px solid #ececec;
+  border-bottom: none;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 35px;
+    left: 34px;
+
+    width: 32px;
+    height: 22px;
+
+    background-image: url("../../img/icon-camera.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.production__video-player {
+  position: relative;
+
+  width: 260px;
+  height: 150px;
+}
+
+.production__video-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: block;
+  width: 101px;
+  height: 77px;
+
+  font-size: 0;
+  line-height: 0;
+
+  background-image: url("../../img/icon-video-button.png");
+  background-repeat: no-repeat;
+
+  transform: translate(-50%, -50%);
+}
+
+.production__wrapper {
+  padding: 33px;
+
+  border: 1px solid #ececec;
+  border-top: none;
+}
+
+.production__description {
+  margin: 0 0 25px;
+
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #444444;
+}
