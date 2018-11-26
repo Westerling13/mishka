@@ -2,28 +2,30 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 76px 0 0;
-
-  background-image: url("../../img/bg-intro-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-color: #f1f1f1;
-}
-
-.intro--catalog {
   padding: 75px 0;
 
-  background-image: none;
+  background-color: #f1f1f1;
 
+  &--index {
+    padding: 76px 0 0;
+
+    background-image: url("../../img/bg-intro-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}
+
+.intro--index {
   .intro__title {
-    margin: 0;
+    margin: 0 0 120px;
+    padding: 0 38px;
   }
 }
 
 .intro__title {
   width: 100%;
-  margin: 0 0 120px;
-  padding: 0 38px;
+  margin: 0;
+  padding: 0 25px;
 
   font-size: 27px;
   font-weight: 700;

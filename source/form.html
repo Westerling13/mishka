@@ -10,10 +10,12 @@
     <div class="page__wrapper">
 
       <header class="header">
-        <a class="header__logo" href="index.html">
-          <img class="header__logo-image" src="img/logo-mishka.svg" width="86" height="35" alt="Логотип Mishka">
-        </a>
-        <button class="header__button">Меню</button>
+        <div class="header__wrapper">
+          <a class="header__logo" href="index.html">
+            <img class="header__logo-image" src="img/logo-mishka-mobile.png" width="86" height="35" alt="Логотип Mishka">
+          </a>
+          <button class="header__button">Меню</button>
+        </div>
         <nav class="main-nav">
           <ul class="site-list">
             <li class="site-list__item">
@@ -41,26 +43,29 @@
 
         <section class="intro">
           <h1 class="intro__title">Вязание на заказ</h1>
-          <p class="intro__description">
+        </section>
+
+        <section class="order">
+          <h2 class="visually-hidden">Форма заказа</h1>
+
+          <p class="order__description">
             Мы будем рады воплотить в жизнь
             ваши пожелания! Заполните простую
             форму заказа и мы свяжемся с вами,
             чтобы уточнить детали.
           </p>
-        </section>
 
-        <section class="order">
-          <form class="order__form">
+          <form class="order__form" action="https://echo.htmlacademy.ru" method="post">
 
             <fieldset class="order__fieldset">
               <legend class="order__legend">Тип</legend>
               <label class="order__wrapper">
-                <input class="order__radio" type="radio" name="color" value="accessory">
+                <input class="order__radio" type="radio" name="type" value="accessory" checked>
                 <span class="order__radio-indicator"></span>
                 <span class="order__label">Аксессуар для интерьера</span>
               </label>
               <label class="order__wrapper">
-                <input class="order__radiobutton" type="radio" name="color" value="toy">
+                <input class="order__radio" type="radio" name="type" value="toy">
                 <span class="order__radio-indicator"></span>
                 <span class="order__label">Детская игрушка</span>
               </label>
@@ -69,19 +74,19 @@
             <fieldset class="order__fieldset order__fieldset--gray">
               <legend class="order__legend">Цвет</legend>
               <label class="order__wrapper">
-                <input class="order__checkbox" type="checkbox" name="color" value="white">
+                <input class="order__checkbox" type="checkbox" name="color" value="white" checked>
                 <span class="order__checkbox-indicator"></span>
                 <span class="order__label">Белый</span>
               </label>
               <label class="order__wrapper">
-                <input class="order__checkbox" type="checkbox" name="color" value="gray">
+                <input class="order__checkbox" type="checkbox" name="color" value="gray" checked>
                 <span class="order__checkbox-indicator"></span>
                 <span class="order__label">Серый</span>
               </label>
               <label class="order__wrapper">
                 <input class="order__checkbox" type="checkbox" name="color" value="tiffany">
                 <span class="order__checkbox-indicator"></span>
-                <span class="order__label">"Тиффани"</span>
+                <span class="order__label">«Тиффани»</span>
               </label>
               <label class="order__wrapper">
                 <input class="order__checkbox" type="checkbox" name="color" value="black">
@@ -118,14 +123,14 @@
 
             <fieldset class="order__fieldset order__fieldset--gray">
               <legend class="order__legend">Тел</legend>
-              <label class="order__wrapper">
+              <label class="order__wrapper order__wrapper--phone">
                 <input class="order__input" type="tel" name="mobile" placeholder="+7 XXX XX XX*" required>
               </label>
             </fieldset>
 
             <fieldset class="order__fieldset order__fieldset--gray">
               <legend class="order__legend">E-mail</legend>
-              <label class="order__wrapper">
+              <label class="order__wrapper order__wrapper--mail">
                 <input class="order__input" type="email" name="email" placeholder="Ваш Email*" required>
               </label>
             </fieldset>
@@ -136,7 +141,7 @@
             </fieldset>
 
             <p class="order__footnote">*Поля обязательны для заполнения</p>
-            <button class="order__button button" type="submit" name="button">Отправить заказ</button>
+            <button class="order__button button" type="submit">Отправить заказ</button>
 
           </form>
         </section>
@@ -149,13 +154,13 @@
         </a>
         <ul class="footer__social-list">
           <li class="footer__social-item">
-            <a class="footer__social-link" href="#">Мы в Инстаграме</a>
+            <a class="footer__social-link footer__social-link--instagram" href="#">Мы в Инстаграме</a>
           </li>
           <li class="footer__social-item">
-            <a class="footer__social-link" href="#">Мы в Фейсбуке</a>
+            <a class="footer__social-link footer__social-link--fb" href="#">Мы в Фейсбуке</a>
           </li>
           <li class="footer__social-item">
-            <a class="footer__social-link" href="#">Мы в Твиттере</a>
+            <a class="footer__social-link footer__social-link--twitter" href="#">Мы в Твиттере</a>
           </li>
         </ul>
         <div class="footer__copyright">
