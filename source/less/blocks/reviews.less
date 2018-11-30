@@ -1,11 +1,11 @@
 .reviews {
   display: flex;
   flex-wrap: wrap;
-  padding: 30px 30px 45px;
+  padding: 26px 30px 45px;
 }
 
 .reviews__title {
-  margin: 0 0 30px;
+  margin: 0 0 24px;
 
   font-size: 25px;
   font-weight: 700;
@@ -18,7 +18,7 @@
 }
 
 .reviews__text {
-  margin: 0 0 30px;
+  margin: 0 0 24px;
 
   font-size: 15px;
   font-weight: 400;
@@ -30,13 +30,15 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
+  letter-spacing: 0.2px;
   font-style: normal;
 }
 
 .reviews__nickname {
   display: block;
-  margin: 0 0 10px;
+  margin: 0 0 28px;
 
+  letter-spacing: 1px;
   color: #444444;
 }
 
@@ -53,6 +55,8 @@
 
   border: 1px solid #ececec;
   background-color: #ffffff;
+
+  cursor: pointer;
 
   &--right {
     border-left: none;
@@ -73,14 +77,23 @@
   &--left::before {
     left: 38px;
 
-    background-image: url("../../img/icon-arrow.png");
+    background-image: url("../../img/icon-arrow.svg");
   }
 
   &--right::before {
-    right: 38px;
+    right: 41px;
 
-    background-image: url("../../img/icon-arrow.png");
+    background-image: url("../../img/icon-arrow.svg");
     transform: rotate(180deg);
+  }
+
+  &:hover::before,
+  &:focus::before {
+    opacity: 0.6;
+  }
+
+  &:active::before {
+    opacity: 0.3;
   }
 }
 

@@ -2,16 +2,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 40px 0;
+  padding: 40px 0 38px;
 
-  background-image: url("../../img/bg-zigzag-mobile.png");
+  background-image: url("../../img/bg-zigzag-line.svg");
   background-repeat: no-repeat;
+  background-size: 100%;
   background-position: top;
 }
 
 .contacts__wrapper {
   width: 100%;
-  margin: 0 0 15px;
+  margin: 0 0 23px;
   padding: 0 30px;
 }
 
@@ -25,23 +26,49 @@
 }
 
 .contacts__info {
-  border-spacing: 0 15px;
+  border-spacing: 0;
 }
 
 .contacts__field {
-  width: 90px;
+  width: 77px;
+  padding: 16px 0 14px;
 
   display: flex;
   align-items: flex-start;
 }
 
+.contacts__adress {
+  padding: 16px 0 14px;
+}
+
+.contacts__adress-link {
+  padding: 1px 0 4px;
+
+  color: #444444;
+
+  border-bottom: 1px solid #46c1ae;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .contacts__map {
   width: 320px;
-  height: 452px;
-  margin: 0 0 30px;
+  height: 457px;
+  margin: 0 0 38px;
 
-  background-image: url("../../img/bg-map.jpg");
+  background-image:
+    url("../../img/icon-map-pin.svg"),
+    url("../../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position:
+    139px 145px,
+    center;
 }
 
 .contacts__button {

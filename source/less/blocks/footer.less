@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 30px 30px;
+  padding: 25px 30px 30px;
 
   background-color: #f1f1f1;
 }
@@ -17,14 +17,14 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 0;
-  padding: 0 0 30px;
+  margin: 0 0 28px;
+  padding: 0 0 25px;
 
   border-bottom: 1px solid #e5e5e5;
 }
 
 .footer__social-item {
-  margin-right: 30px;
+  margin-right: 29px;
 
   &:last-child {
     margin: 0;
@@ -32,6 +32,8 @@
 }
 
 .footer__social-link {
+  position: relative;
+
   display: block;
   width: 30px;
   height: 30px;
@@ -39,48 +41,61 @@
   font-size: 0;
   line-height: 0;
 
-  background-position: center;
-  background-repeat: no-repeat;
+  .footer__social-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
 
-  &--instagram {
-    background-image: url("../../img/icon-instagram.png");
+     fill: #231F20;
+
+    transform: translate(-50%, -50%);
   }
 
-  &--fb {
-    background-image: url("../../img/icon-fb.png");
+  &:hover .footer__social-icon,
+  &:focus .footer__social-icon {
+    fill: #46c1ae;
   }
 
-  &--twitter {
-    background-image: url("../../img/icon-twitter.png");
+  &:active .footer__social-icon {
+    opacity: 0.3;
   }
 }
 
 .footer__copyright {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  padding: 20px 0 0;
+  padding: 0 57px 0 0;
 }
 
-.footer__copyright-text {
-  margin: 0 20px 0 0;
+.footer__copyright-link {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 
   font-size: 19px;
   font-weight: 700;
   line-height: 18px;
   color: #000000;
-}
-
-.footer__copyright-link {
-  display: block;
-  width: 27px;
-  height: 34px;
-
-  font-size: 0;
-  line-height: 0;
 
   background-image: url("../../img/logo-htmlacademy.png");
   background-repeat: no-repeat;
+
+  .footer__copyright-logo {
+    position: absolute;
+    top: -6px;
+    right: -18px;
+
+    fill: #63d1bb;
+  }
+
+  &:hover .footer__copyright-logo,
+  &:focus .footer__copyright-logo {
+    fill: #46c1ae;
+  }
+
+  &:active .footer__copyright-logo {
+    opacity: 0.3;
+  }
 }

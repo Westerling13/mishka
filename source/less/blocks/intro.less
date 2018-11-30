@@ -7,17 +7,17 @@
   background-color: #f1f1f1;
 
   &--index {
-    padding: 76px 0 0;
+    padding: 73px 0 0;
 
-    background-image: url("../../img/bg-intro-mobile.jpg");
+    background-image: url("../../img/bg-intro-mobile@1x.jpg");
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center -15px;
   }
 }
 
 .intro--index {
   .intro__title {
-    margin: 0 0 120px;
+    margin: 0 0 116px;
     padding: 0 38px;
   }
 }
@@ -37,15 +37,21 @@
 .intro__wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-end;
   width: 100%;
+  min-height: 211px;
+
 }
 
 .intro__link {
   position: relative;
 
-  display: block;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  padding: 26px 30px 28px;
+  min-height: 103px;
+  padding: 26px 29px 28px;
 
   font-size: 19px;
   font-weight: 700;
@@ -55,37 +61,51 @@
 
   background-color: #63d1bb;
 
-  &--interior {
-    &::before {
-      content: "";
+  .intro__link-icon {
+    position: absolute;
 
-      position: absolute;
-      top: 23px;
-      right: 36px;
+    display: block;
 
-      width: 40px;
-      height: 62px;
+    fill: #149080;
+    opacity: 0.5;
+  }
 
-      background-image: url("../../img/icon-interior.png");
-      background-repeat: no-repeat;
-    }
+  &:hover,
+  &:focus {
+    padding-bottom: 33px;
+  }
+
+  &:hover .intro__link-icon,
+  &:focus .intro__link-icon {
+    opacity: 0.7;
+  }
+
+  &--interior:hover,
+  &--interior:focus {
+    background-color: #59d5bc;
+  }
+
+  &--interior .intro__link-icon {
+    top: 23px;
+    right: 36px;
   }
 
   &--toys {
     background-color: #56c3b2;
+  }
 
-    &::before {
-      content: "";
+  &--toys .intro__link-icon {
+    top: 21px;
+    right: 27px;
+  }
 
-      position: absolute;
-      top: 23px;
-      right: 36px;
+  &--toys:hover,
+  &--toys:focus {
+    background-color: #46c1ae;
+  }
 
-      width: 60px;
-      height: 60px;
-
-      background-image: url("../../img/icon-toys.png");
-      background-repeat: no-repeat;
-    }
+  &:active span,
+  &:active .intro__link-icon {
+    opacity: 0.3;
   }
 }
