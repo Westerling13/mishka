@@ -12,7 +12,7 @@
 
 .card__info {
   width: 100%;
-  padding: 28px;
+  padding: 26px 27px 27px;
 
   border: 1px solid #ececec;
 
@@ -26,7 +26,7 @@
 }
 
 .card__title {
-  margin: 0;
+  margin: 0 0 5px;
 
   font-size: 17px;
   font-weight: 700;
@@ -48,7 +48,7 @@
 
 .card__parameters {
   align-self: center;
-  margin: 0 0 15px;
+  margin: 0 0 20px;
 
   font-size: 13px;
   font-weight: 400;
@@ -83,6 +83,18 @@
   font-size: 0;
   line-height: 0;
 
-  background-image: url("../../img/icon-cart.png");
-  background-repeat: no-repeat;
+  .card__button-icon {
+    fill: #231f20;
+    opacity: 0.2;
+  }
+
+  &:hover .card__button-icon,
+  &:focus .card__button-icon {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+
+  &:active .card__button-icon {
+    opacity: 0.3;
+  }
 }
