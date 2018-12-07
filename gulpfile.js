@@ -27,9 +27,13 @@ gulp.task("serve", function() {
   server.init({
     server: "source/",
     notify: false,
+    online: true,
     open: true,
     cors: true,
-    ui: false
+    ui: false,
+    port: 8080,
+    logPrefix: "Mishka",
+    host: "192.168.1.39"
   });
 
   gulp.watch("source/less/**/*.less", ["style"]);
