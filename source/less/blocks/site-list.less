@@ -26,22 +26,19 @@
 
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 
-  .site-list__link-icon {
-    position: absolute;
-    top: 32px;
-    left: 32px;
-
-    fill: #231F20;
-    opacity: 0.2;
-  }
-
-  &:hover .site-list__link-text {
+  &:hover .site-list__link-text,
+  &:focus .site-list__link-text {
     opacity: 0.6;
   }
 
-  &:hover .site-list__link-icon {
+  &:hover .site-list__link-icon,
+  &:focus .site-list__link-icon {
     fill: #63d1bb;
     opacity: 1;
+  }
+
+  &:focus {
+    outline: none;
   }
 
   &:active {
