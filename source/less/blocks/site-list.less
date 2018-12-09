@@ -1,5 +1,4 @@
 .site-list {
-  display: none;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
@@ -16,7 +15,7 @@
 
   display: block;
   width: 100%;
-  padding: 28px 25px 27px 76px;
+  padding: 27px 25px 27px 76px;
 
   font-size: 17px;
   font-weight: 700;
@@ -47,5 +46,25 @@
 
   &--disabled {
     pointer-events: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0 30px;
+  }
+
+  .site-list__item {
+    width: auto;
+  }
+
+  .site-list__link {
+    padding: 17px 19px;
+
+    font-size: 15px;
+
+    box-shadow: none;
   }
 }

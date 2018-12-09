@@ -9,7 +9,7 @@
   &--index {
     padding: 73px 0 0;
 
-    background-image: url("../../img/bg-intro-mobile@1x.jpg");
+    background-image: url("../img/bg-intro-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center -15px;
   }
@@ -106,5 +106,73 @@
   &:active span,
   &:active .intro__link-icon {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .intro {
+    &--index {
+      padding: 95px 0 0;
+
+      background-image: url("../img/bg-intro-tablet@1x.jpg");
+      background-position: center -60px;
+    }
+  }
+
+  .intro--index {
+    .intro__title {
+      margin: 0 0 368px;
+      padding: 0 38px;
+    }
+  }
+
+  .intro__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .intro__wrapper {
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+    min-height: 124px;
+    padding: 0 50px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      z-index: 10;
+      left: 50%;
+      bottom: -12px;
+
+      width: 770px;
+      height: 24px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+
+      transform: translateX(-50%);
+    }
+  }
+
+  .intro__link {
+    width: 50%;
+    min-height: 119px;
+    padding: 28px 36px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    &--interior .intro__link-icon {
+      top: 30px;
+    }
+
+    &--toys .intro__link-icon {
+      top: 32px;
+      right: 34px;
+    }
   }
 }

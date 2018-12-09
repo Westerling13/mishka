@@ -99,3 +99,34 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .footer {
+    padding: 51px 50px 49px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__logo {
+    display: block;
+  }
+
+  .footer__social-list {
+    width: auto;
+    margin: 0 0 0 77px;
+    padding: 0;
+
+    border: none;
+  }
+
+  .footer__copyright {
+    width: auto;
+    min-width: 182px;
+  }
+
+  .footer__copyright-link {
+    .footer__copyright-logo {
+      right: -57px;
+    }
+  }
+}

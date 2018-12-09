@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -6,7 +8,7 @@
   background-color: #ffffff;
 }
 
-.header__wrapper {
+.header__logo-wrapper {
   position: relative;
 
   display: flex;
@@ -19,8 +21,6 @@
 
 .header__logo {
   display: block;
-  width: 86px;
-  height: 35px;
 
   &:hover {
     opacity: 0.6;
@@ -35,10 +35,42 @@
   }
 }
 
+.header__logo-image {
+  display: block;
+  width: auto;
+}
+
 .header__news-list {
   display: none;
 }
 
 .header__delivery {
   display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .header {
+    position: relative;
+    background-color: transparent;
+  }
+
+  .header__logo-wrapper {
+    position: absolute;
+    top: 22px;
+    left: 48px;
+
+    width: auto;
+    padding: 0;
+  }
+
+  .header__delivery {
+    position: absolute;
+    top: 91px;
+    right: 49px;
+
+    display: block;
+
+    line-height: 24px;
+    color: #444444;
+  }
 }

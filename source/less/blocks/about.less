@@ -112,3 +112,83 @@
     background-repeat: no-repeat;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .about {
+    padding: 73px 45px 61px;
+  }
+
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 15px;
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  .about__item {
+    width: 50%;
+    padding-top: 88px;
+
+    font-size: 20px;
+    line-height: 22px;
+
+    &--gift {
+      order: 6;
+
+      &::before {
+        top: 36px;
+        left: 3px;
+      }
+    }
+
+    &--heart {
+      order: 5;
+
+      &::before {
+        top: 40px;
+        left: 10px;
+      }
+    }
+
+    &--rocket {
+      order: 4;
+
+      &::before {
+        top: 38px;
+        left: -6px;
+      }
+    }
+
+    &--bill {
+      order: 3;
+
+      &::before {
+        top: 35px;
+        left: 2px;
+      }
+    }
+
+    &--ball {
+      order: 2;
+
+      &::before {
+        top: 37px;
+        left: 4px;
+      }
+    }
+
+    &--flower {
+      order: 1;
+
+      &::before {
+        top: 34px;
+        left: 10px;
+      }
+    }
+  }
+}
