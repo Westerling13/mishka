@@ -6,8 +6,11 @@
 
 .card__image {
   display: block;
-  width: 260px;
-  height: 195px;
+
+  img {
+    display: block;
+    width: auto;
+  }
 }
 
 .card__info {
@@ -96,5 +99,37 @@
 
   &:active .card__button-icon {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 334px;
+    padding: 25px 26px 27px;
+  }
+
+  .card__title {
+    max-width: 240px;
+    margin-bottom: 4px;
+  }
+
+  .card__title-link {
+    font-size: 20px;
+  }
+
+  .card__parameters {
+    font-size: 15px;
+  }
+
+  .card__label {
+    padding: 20px 5px 0;
+  }
+
+  .card__price {
+    font-size: 17px;
   }
 }
