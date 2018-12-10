@@ -109,6 +109,23 @@
 
   .footer__logo {
     display: block;
+
+    &:hover .footer__logo-image,
+    &:focus .footer__logo-image {
+      fill: #46c1ae;
+    }
+
+    &:active .footer__logo-image {
+      opacity: 0.3;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &--disabled {
+      pointer-events: none;
+    }
   }
 
   .footer__social-list {
