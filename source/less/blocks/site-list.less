@@ -68,3 +68,26 @@
     box-shadow: none;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    width: auto;
+    padding: 0 13px;
+  }
+
+  .site-list__item {
+    border-right: 1px solid #f1f1f1;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  .site-list__link {
+    min-height: 88px;
+    padding: 31px 36px;
+
+    font-size: 17px;
+    line-height: 24px;
+  }
+}

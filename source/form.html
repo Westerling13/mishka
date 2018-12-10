@@ -45,12 +45,13 @@
         <div class="header__logo-wrapper">
           <a class="header__logo" href="index.html">
             <picture>
+              <source media="(min-width: 1250px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
               <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Mishka">
             </pictire>
           </a>
         </div>
-        <nav class="main-nav">
+        <nav class="header__nav main-nav main-nav--no-js">
           <div class="main-nav__wrapper">
             <a class="main-nav__link main-nav__link--search" href="#">
               <svg class="main-nav__link-icon" width="18" height="18">
@@ -75,15 +76,17 @@
             </li>
           </ul>
         </nav>
-        <ul class="header__news-list">
-          <li class="header__news-item">
-            <a class="header__news-link" href="#">Новые поступления</a>
-          </li>
-          <li class="header__news-item">
-            <a class="header__news-link" href="#">Распродажа</a>
-          </li>
-        </ul>
-        <p class="header__delivery">Бесплатная доставка по России</p>
+        <div class="header__news">
+          <ul class="header__news-list">
+            <li class="header__news-item">
+              <a class="header__news-link" href="#">Новые поступления</a>
+            </li>
+            <li class="header__news-item">
+              <a class="header__news-link" href="#">Распродажа</a>
+            </li>
+          </ul>
+          <p class="header__delivery">Бесплатная доставка по России</p>
+        </div>
       </header>
 
       <main class="main">

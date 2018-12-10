@@ -159,7 +159,7 @@
       left: 50%;
       bottom: -12px;
 
-      width: 770px;
+      width: inherit;
       height: 24px;
 
       background-image: url("../img/bg-zigzag-fill.svg");
@@ -185,6 +185,43 @@
     &--toys .intro__link-icon {
       top: 32px;
       right: 34px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro {
+
+    &--index {
+      background-color: #f9f9f9;
+      background-image:
+        none,
+        url("../img/bg-intro-desktop@1x.jpg");
+      background-position:
+        center -59px;
+      background-size:
+        auto;
+    }
+  }
+
+  .intro--index {
+    .intro__title {
+      margin: 0 0 354px;
+    }
+  }
+
+  .intro__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .intro__wrapper {
+    padding: 0 100px;
+
+    &::before {
+      bottom: -6px;
+
+      width: inherit;
     }
   }
 }

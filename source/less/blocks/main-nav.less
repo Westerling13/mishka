@@ -166,10 +166,35 @@
     }
 
     &--cart {
-      width: 315px;
+      width: 316px;
       padding: 31px 25px 33px 59px;
 
       text-align: center;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    justify-content: space-between;
+
+    border-bottom: 1px solid #ececec;
+
+    .main-nav__list {
+      background-color: #ffffff;
+    }
+  }
+
+  .main-nav__wrapper {
+    order: 1;
+    width: auto;
+
+    border: none;
+  }
+
+  .main-nav__link {
+    &--cart {
+      padding-left: 55px;
     }
   }
 }
