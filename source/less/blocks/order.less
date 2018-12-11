@@ -436,5 +436,56 @@
 }
 
 @media (min-width: @desktop-width) {
+  .order {
+    padding: 100px 0 70px;
+  }
 
+  .order__description {
+    padding: 0 226px;
+  }
+
+  .order__form-group {
+    padding-left: 225px;
+    padding-right: 225px;
+
+    &--last-child {
+      margin-bottom: 10px;
+    }
+  }
+
+  .order__form-group--checkbox {
+    padding-right: 136px;
+  }
+
+  .order__form-group--name,
+  .order__form-group--phone,
+  .order__form-group--email {
+    padding-right: 225px;
+  }
+
+  .order__form-group--phone {
+    .order__input-icon--phone {
+      right: 8px;
+    }
+  }
+
+  .order__form-group--email {
+    .order__input-icon--mail {
+      right: 4px;
+    }
+  }
+
+  .order__legend {
+    left: 112px;
+  }
+
+  .order__field {
+    &--checkbox {
+      width: 33.3%;
+    }
+  }
+
+  .order__footnote-wrapper {
+    padding: 0 225px;
+  }
 }
