@@ -7,7 +7,12 @@
   background-color: #f1f1f1;
   background-image: url("../img/bg-intro-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: 575px;
   background-position: center -15px;
+
+  @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
+    background-image: url("../img/bg-intro-mobile@2x.jpg");
+  }
 }
 
 .intro__title {
@@ -105,13 +110,13 @@
   .intro {
     padding: 95px 0 0;
 
-    background-image:
-      none,
-      url("../img/bg-intro-tablet@1x.jpg");
-    background-position:
-      center -59px;
-    background-size:
-      auto;
+    background-image: url("../img/bg-intro-tablet@1x.jpg");
+    background-position: center -59px;
+    background-size: 1150px;
+
+    @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
+      background-image: url("../img/bg-intro-tablet@2x.jpg");
+    }
   }
 
   .intro__title {
@@ -177,7 +182,11 @@
       none,
       url("../img/bg-intro-desktop@1x.jpg");
     background-position: center -59px;
-    background-size: auto;
+    background-size: 1150px;
+
+    @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
+      background-image: url("../img/bg-intro-desktop@2x.jpg");
+    }
   }
 
   .intro__title {
