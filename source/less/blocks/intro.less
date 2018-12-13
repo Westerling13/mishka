@@ -2,29 +2,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 73px 25px 75px;
+  padding: 73px 0 0;
 
   background-color: #f1f1f1;
-
-  &--index {
-    padding: 73px 0 0;
-
-    background-image: url("../img/bg-intro-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center -15px;
-  }
-}
-
-.intro--index {
-  .intro__title {
-    margin: 0 0 116px;
-    padding: 0 38px;
-  }
+  background-image: url("../img/bg-intro-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center -15px;
 }
 
 .intro__title {
   width: 100%;
-  margin: 0;
+  margin: 0 0 116px;
+  padding: 0 38px;
 
   font-size: 27px;
   font-weight: 700;
@@ -40,7 +29,6 @@
   align-content: flex-end;
   width: 100%;
   min-height: 211px;
-
 }
 
 .intro__link {
@@ -60,6 +48,8 @@
 
   background-color: #63d1bb;
 
+  transition: all 0.2s ease-in;
+
   .intro__link-icon {
     position: absolute;
 
@@ -67,6 +57,8 @@
 
     fill: #149080;
     opacity: 0.5;
+
+    transition: all 0.2s ease-in;
   }
 
   &:hover,
@@ -111,34 +103,21 @@
 
 @media (min-width: @tablet-width) {
   .intro {
-    padding: 37px 25px 92px;
+    padding: 95px 0 0;
 
-    background-image: url('../img/bg-zigzag-fill.svg');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 101%;
-
-    &--index {
-      padding: 95px 0 0;
-
-      background-image:
-        none,
-        url("../img/bg-intro-tablet@1x.jpg");
-      background-position:
-        center -59px;
-      background-size:
-        auto;
-    }
-  }
-
-  .intro--index {
-    .intro__title {
-      margin: 0 0 368px;
-      padding: 0 38px;
-    }
+    background-image:
+      none,
+      url("../img/bg-intro-tablet@1x.jpg");
+    background-position:
+      center -59px;
+    background-size:
+      auto;
   }
 
   .intro__title {
+    margin: 0 0 368px;
+    padding: 0 38px;
+
     font-size: 43px;
     line-height: 50px;
   }
@@ -191,29 +170,19 @@
 
 @media (min-width: @desktop-width) {
   .intro {
-    padding-bottom: 122px;
+    padding-bottom: 0;
 
-    &--index {
-      padding-bottom: 0;
-
-      background-color: #f9f9f9;
-      background-image:
-        none,
-        url("../img/bg-intro-desktop@1x.jpg");
-      background-position:
-        center -59px;
-      background-size:
-        auto;
-    }
-  }
-
-  .intro--index {
-    .intro__title {
-      margin: 0 0 354px;
-    }
+    background-color: #f9f9f9;
+    background-image:
+      none,
+      url("../img/bg-intro-desktop@1x.jpg");
+    background-position: center -59px;
+    background-size: auto;
   }
 
   .intro__title {
+    margin: 0 0 354px;
+
     font-size: 53px;
     line-height: 57px;
   }

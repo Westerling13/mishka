@@ -1,4 +1,38 @@
+.main__title {
+  width: 100%;
+  margin: 0;
+  padding: 73px 25px 75px;
+
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+
+  background-color: #f1f1f1;
+}
+
+@media (min-width: @tablet-width) {
+  .main__title {
+    padding: 35px 25px 94px;
+
+    font-size: 43px;
+    line-height: 50px;
+
+    background-image: url('../img/bg-zigzag-fill.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 101%;
+  }
+}
+
 @media (min-width: @desktop-width) {
+  .main__title {
+    padding-bottom: 122px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
   .main__reviews {
     margin: 0 50px;
   }

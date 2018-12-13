@@ -8,8 +8,6 @@
 
 .order__description {
   margin: 0 0 24px;
-
-
 }
 
 .order__form-group {
@@ -29,7 +27,7 @@
   }
 
   &--last-child {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
   }
 }
 
@@ -66,6 +64,8 @@
     position: absolute;
 
     opacity: 0.2;
+
+    transition: all 0.2s ease-in;
   }
 
   .order__input-icon--phone {
@@ -100,6 +100,7 @@
   border-radius: 50%;
 
   cursor: pointer;
+  transition: all 0.2s ease-in;
 
   &::before {
     content: "";
@@ -159,6 +160,7 @@
   border: 2px solid #444444;
 
   cursor: pointer;
+  transition: all 0.2s ease-in;
 
   &::before {
     content: "";
@@ -208,6 +210,8 @@
   border: none;
   box-shadow: inset 0 -2px 0 #000000;
 
+  transition: all 0.2s ease-in;
+
   &:hover,
   &:focus {
     outline: none;
@@ -246,6 +250,8 @@
 
   border: 2px solid #444444;
 
+  transition: all 0.2s ease-in;
+
   &:hover,
   &:focus {
     outline: none;
@@ -270,6 +276,8 @@
 
 .order__button {
   width: 100%;
+
+  transition: all 0.2s ease-in;
 }
 
 @media (min-width: @tablet-width) {
@@ -437,7 +445,7 @@
 
 @media (min-width: @desktop-width) {
   .order {
-    padding: 100px 0 70px;
+    padding: 103px 0 49px;
   }
 
   .order__description {
@@ -449,7 +457,7 @@
     padding-right: 225px;
 
     &--last-child {
-      margin-bottom: 10px;
+      margin-bottom: 11px;
     }
   }
 

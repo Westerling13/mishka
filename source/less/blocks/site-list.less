@@ -25,15 +25,11 @@
 
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 
-  &:hover .site-list__link-text,
-  &:focus .site-list__link-text {
-    opacity: 0.6;
-  }
+  transition: all 0.2s ease-in;
 
-  &:hover .site-list__link-icon,
-  &:focus .site-list__link-icon {
-    fill: #63d1bb;
-    opacity: 1;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
   }
 
   &:focus {
