@@ -14,8 +14,32 @@
 }
 
 .page__wrapper {
+  position: relative;
+
   width: @mobile-width;
   margin: 0 auto;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 90;
+
+    display: none;
+    width: 100%;
+    height: 100%;
+
+    background-color: #ffffff;
+    opacity: 0.9;
+  }
+}
+
+.page__wrapper--shade {
+  &::before {
+    display: block;
+  }
 }
 
 @media (min-width: @tablet-width) {

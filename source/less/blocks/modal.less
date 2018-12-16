@@ -8,7 +8,7 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 320px;
-  padding: 36px 30px 46px;
+  padding: 30px 30px 46px;
 
   border: 1px solid #c6c6c6;
   background-color: #ffffff;
@@ -24,7 +24,8 @@
 
 .modal__title {
   display: block;
-  margin: 0 0 15px;
+  margin: 0 0 13px;
+  padding: 0 50px;
 
   font-size: 25px;
   font-weight: 700;
@@ -35,7 +36,7 @@
 }
 
 .modal__text {
-  margin: 0 0 15px;
+  margin: 0 0 22px;
 
   font-size: 15px;
   font-weight: 400;
@@ -65,14 +66,31 @@
 
   border: 2px solid #ececec;
   background-color: #ffffff;
+  cursor: pointer;
 
   transition: all 0.2s ease-in;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border: 2px solid rgba(#444444, 0.3);
+  }
+
+  &:active {
+    border: 2px solid #62d1ba;
+  }
 
   &:last-child {
     margin: 0;
   }
+}
 
-  &--active {
+.modal__size-button--active {
+  border-color: #63d1bb;
+
+  &:hover,
+  &:focus,
+  &:active {
     border-color: #63d1bb;
   }
 }
@@ -81,7 +99,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 15px 15px 16px;
+  padding: 16px 15px 18px;
 
   font-size: 17px;
   font-weight: 700;
@@ -92,15 +110,26 @@
   background-color: #63d1bb;
 
   transition: all 0.2s ease-in;
+
+  &:hover,
+  &:focus {
+    background-color: #59d5bc;
+  }
+
+  &:active .modal__button-text {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .modal {
     width: 566px;
+    padding: 32px 30px 46px;
   }
 
   .modal__title {
     width: 100%;
+    margin-bottom: 15px;
 
     font-size: 30px;
     line-height: 57px;
@@ -110,6 +139,10 @@
     margin-bottom: 20px;
 
     font-size: 17px;
+  }
+
+  .modal__wrapper {
+    margin-bottom: 33px;
   }
 
   .modal__size-button {

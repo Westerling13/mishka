@@ -6,6 +6,7 @@
     <title>Mishka</title>
     <link rel="stylesheet" href="/css/style.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=6c502d82-9705-4d00-88c2-f8371cf6f845&lang=ru_RU" type="text/javascript"></script>
   </head>
   <body class="page__body">
 
@@ -145,7 +146,7 @@
             <picture>
               <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
-              <source type="image/webp" src="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
 
               <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
@@ -211,7 +212,7 @@
               </div>
             </div>
           </div>
-          <div class="contacts__map">
+          <div class="contacts__map" id="map">
 
           </div>
           <a class="contacts__button button" href="#">Напишите нам</a>
@@ -226,7 +227,9 @@
             <button class="modal__size-button">M</button>
             <button class="modal__size-button">L</button>
           </div>
-          <a class="modal__button" href="#">Добавить</a>
+          <a class="modal__button" href="#">
+            <span class="modal__button-text">Добавить</span>
+          </a>
         </section>
       </main>
 
@@ -274,6 +277,7 @@
 
     </div>
 
+    <script src="js/map.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/modal.js"></script>
 
