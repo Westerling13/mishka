@@ -1,33 +1,33 @@
-'use strickt';
+(function () {
+  'use strict';
 
-(() => {
-  const modal = document.querySelector('.modal');
-  const buttonStock = document.querySelector('.stock__button');
-  const buttonModal = modal.querySelector('.modal__button');
-  const buttonSize = modal.querySelectorAll('.modal__size-button');
-  const buttonProduct1 = document.querySelector('#product-01-button');
-  const buttonProduct2 = document.querySelector('#product-02-button');
-  const buttonProduct3 = document.querySelector('#product-03-button');
-  const buttonProduction = document.querySelector('.production__button');
-  const pageWrapper = document.querySelector('.page__wrapper');
-  const ESCAPE_KEYCODE = 27;
+  var modal = document.querySelector('.modal');
+  var buttonStock = document.querySelector('.stock__button');
+  var buttonModal = modal.querySelector('.modal__button');
+  var buttonSize = modal.querySelectorAll('.modal__size-button');
+  var buttonProduct1 = document.querySelector('#product-01-button');
+  var buttonProduct2 = document.querySelector('#product-02-button');
+  var buttonProduct3 = document.querySelector('#product-03-button');
+  var buttonProduction = document.querySelector('.production__button');
+  var pageWrapper = document.querySelector('.page__wrapper');
+  var ESCAPE_KEYCODE = 27;
 
 
-  const modalOpen = (evt) => {
+  function modalOpen (evt) {
     evt.preventDefault();
 
     modal.classList.add('modal--active');
-    modal.style.top = `${evt.pageY - modal.offsetHeight}px`;
+    modal.style.top = evt.pageY - modal.offsetHeight + 'px';
     pageWrapper.classList.add('page__wrapper--shade');
 
-    document.addEventListener('keydown', (evt) => {
+    document.addEventListener('keydown', function (evt) {
       if (evt.keyCode === ESCAPE_KEYCODE) {
         modalClose(evt);
       }
     });
   }
 
-  const modalClose = (evt) => {
+  function modalClose (evt) {
     evt.preventDefault();
     modal.classList.remove('modal--active');
     pageWrapper.classList.remove('page__wrapper--shade');
@@ -35,8 +35,8 @@
     document.removeEventListener('keydown', modalClose);
   }
 
-  const removeActive = () => {
-    for (let i = 0; i < buttonSize.length; i += 1) {
+  function removeActive () {
+    for (var i = 0; i < buttonSize.length; i += 1) {
       buttonSize[i].classList.remove('modal__size-button--active');
     }
   }
@@ -51,21 +51,18 @@
     buttonProduction.addEventListener('click', modalOpen);
   }
 
-  buttonSize[0].addEventListener('click', () => {
-    console.log('0');
+  buttonSize[0].addEventListener('click', function () {
     removeActive();
     buttonSize[0].classList.add('modal__size-button--active');
   });
-  buttonSize[1].addEventListener('click', () => {
-    console.log('1');
+  buttonSize[1].addEventListener('click', function () {
     removeActive();
     buttonSize[1].classList.add('modal__size-button--active');
   });
-  buttonSize[2].addEventListener('click', () => {
-    console.log('2');
+  buttonSize[2].addEventListener('click', function () {
     removeActive();
     buttonSize[2].classList.add('modal__size-button--active');
   });
 
   buttonModal.addEventListener('click', modalClose);
-})()
+}());

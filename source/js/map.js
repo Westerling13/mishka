@@ -6,11 +6,11 @@ function init() {
     });
 
     var myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-        hintContent: 'Собственный значок метки',
-        balloonContent: 'Это красивая метка'
+        hintContent: 'Mishka',
+        balloonContent: 'ул. Большая Конюшенная, д. 19/8, офис 101'
     }, {
         iconLayout: 'default#image',
-        iconImageHref: '../img/icon-map-pin.svg',
+        iconImageHref: 'img/icon-map-pin.svg',
         iconImageSize: [67, 100],
         iconImageOffset: [-40, -95]
     });

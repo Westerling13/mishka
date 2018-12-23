@@ -1,14 +1,14 @@
-'use strickt';
+(function () {
+  'use strict';
 
-(() => {
-  const mainNav = document.querySelector('.main-nav');
-  const toggle = document.querySelector('.main-nav__toggle');
+  var mainNav = document.querySelector('.main-nav');
+  var toggle = document.querySelector('.main-nav__toggle');
 
   mainNav.classList.remove('main-nav--no-js');
 
-  const openMenu = () => {
+  function openMenu () {
     mainNav.classList.toggle('main-nav--opened');
   }
 
   toggle.addEventListener('click', openMenu);
-})();
+}());
