@@ -1,0 +1,46 @@
+.slider {
+    position: relative;
+
+    width: 100%;
+    min-height: 382px;
+}
+
+.slider__item {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    z-index: 1;
+
+    width: 260px;
+    height: auto;
+
+    opacity: 0;
+    
+    transition: opacity 1s;
+
+    &--showing {
+        z-index: 2;
+
+        opacity: 1;
+    }
+}
+
+@media (min-width: @tablet-width) {
+    .slider {
+        min-height: 230px;
+    }
+
+    .slider__item {
+        width: 678px;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .slider {
+        min-height: 230px;
+    }
+
+    .slider__item {
+        width: 794px;
+    }
+}
