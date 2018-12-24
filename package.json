@@ -23,7 +23,6 @@
     "gulp-uglify": "^3.0.1",
     "gulp-webp": "^3.0.0",
     "picturefill": "^3.0.3",
-    "pump": "^3.0.0",
     "run-sequence": "^2.2.1"
   }
 }

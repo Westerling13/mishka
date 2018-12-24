@@ -12,7 +12,6 @@ var imagemin = require("gulp-imagemin");
 var bro = require("gulp-bro");
 var uglify = require("gulp-uglify");
 var del = require("del");
-var pump = require("pump");
 var run = require("run-sequence");
 var server = require("browser-sync").create();
 
