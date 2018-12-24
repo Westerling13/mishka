@@ -1,5 +1,4 @@
-ymaps.ready(init);
-function init() {
+function mapInit() {
     var myMap = new ymaps.Map("map", {
         center: [59.938575, 30.322847],
         zoom: 16
@@ -18,3 +17,5 @@ function init() {
     myMap.geoObjects.add(myPlacemark);
     myMap.behaviors.disable('scrollZoom');
 }
+
+module.exports = mapInit;

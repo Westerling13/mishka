@@ -1,4 +1,4 @@
-(function () {
+function menu() {
   'use strict';
 
   var mainNav = document.querySelector('.main-nav');
@@ -11,4 +11,6 @@
   }
 
   toggle.addEventListener('click', openMenu);
-}());
+}
+
+module.exports = menu;

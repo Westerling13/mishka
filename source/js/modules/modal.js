@@ -1,4 +1,4 @@
-(function () {
+function modal() {
   'use strict';
 
   var modal = document.querySelector('.modal');
@@ -65,4 +65,6 @@
   });
 
   buttonModal.addEventListener('click', modalClose);
-}());
+}
+
+module.exports = modal;
